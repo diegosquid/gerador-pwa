@@ -37,17 +37,17 @@ export default class MyDocument extends Document {
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' />
 
           <meta name='twitter:card' content='summary' />
-          <meta name='twitter:url' content='https://yourdomain.com' />
-          <meta name='twitter:title' content='PWA App' />
-          <meta name='twitter:description' content='Best PWA App in the world' />
-          <meta name='twitter:image' content='https://yourdomain.com/icons/android-chrome-192x192.png' />
-          <meta name='twitter:creator' content='@DavidWShadow' />
+          <meta name='twitter:url' content='https://lotofacil.me' />
+          <meta name='twitter:title' content='Aplicativo da Lotofácil' />
+          <meta name='twitter:description' content='Gere seus jogos da Lotofácil' />
+          <meta name='twitter:image' content='https://lotofacil.me/icons/android-chrome-192x192.png' />
+          <meta name='twitter:creator' content='@diegosquid' />
           <meta property='og:type' content='website' />
           <meta property='og:title' content='Aplicativo da Lotofácil' />
           <meta property='og:description' content='Gere seus jogos da Lotofácil' />
           <meta property='og:site_name' content='Aplicativo da Lotofacil' />
           <meta property='og:url' content='https://lotofacil.me' />
-          <meta property='og:image' content='https://yourdomain.com/icons/apple-touch-icon.png' />
+          <meta property='og:image' content='https://lotofacil.me/icons/apple-touch-icon.png' />
         </Head>
         <body>
           <Main />
