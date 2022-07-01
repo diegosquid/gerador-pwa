@@ -31,7 +31,10 @@ export default function Home (props) {
 
   React.useEffect(() => {
     window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault()
       deferredPrompt = e
+      console.log("Got event");
+      console.log(e)
     })
   }, [])
 
