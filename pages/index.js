@@ -26,15 +26,15 @@ export default function Home (props) {
 
   const [open, setOpen] = React.useState(false)
   const [openSnack, setOpenSnack] = React.useState(false)
-
-  let deferredPrompt
+  const [deferredPrompt, setDeferredPrompt] = React.useState(null)
 
   React.useEffect(() => {
     window.addEventListener('beforeinstallprompt', (e) => {
       e.preventDefault()
-      deferredPrompt = e
+      setDeferredPrompt(e)
       console.log("Got event");
-      console.log(e)
+      console.log(deferredPrompt)
+      console.log(deferredPrompt)
     })
   }, [])
 
