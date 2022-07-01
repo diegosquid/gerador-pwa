@@ -47,7 +47,7 @@ export default function Home (props) {
       props.deferredPrompt.prompt()
       const { outcome } = await props.deferredPrompt.userChoice
       if (outcome === 'accepted') {
-        window.gtag('event', 'app_install', 0)
+        window.gtag('event', 'app_install')
         props.setDeferredPrompt(null)
         setShowAlert(false)
       }
