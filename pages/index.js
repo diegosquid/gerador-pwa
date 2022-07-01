@@ -48,6 +48,7 @@ export default function Home (props) {
       if (outcome === 'accepted') {
         window.gtag('event', 'app_install', 0)
         setDeferredPrompt(null)
+        setShowAlert(false)
       }
     }
   }
@@ -134,9 +135,9 @@ export default function Home (props) {
       <main className={styles.main}>
         {
           showAlert &&
-            <Alert icon={false} severity='success' onClose={handleClose} style={{ position: 'absolute', top: 0, width: '100%', borderRadius: 0 }}>
-              <p>Instale este aplicativo no seu celular, é grátis e não consome quase nada de espaço ;)</p>
-              <Button onClick={installButton}>
+            <Alert icon={false} severity='success' style={{ position: 'absolute', top: 0, width: '100%', borderRadius: 0 }}>
+              <p style={{ fontWeight: 500, fontSize: 14, lineHeight: '130%' }}>Instale este aplicativo para acessar quando quiser, é grátis e não consome nada de espaço</p>
+              <Button style={{ minWidth: 200, backgroundColor: '#7c0044', color: 'white' }} onClick={installButton}>
                 Instalar
               </Button>
             </Alert>
@@ -178,9 +179,9 @@ export default function Home (props) {
           Sistema Vip da Lotofácil
         </Button>
 
-        <Button onClick={openCassino} style={{ marginTop: '0.5rem', width: '18rem', background: 'black' }} variant='contained' color='secondary'>
+        {/*<Button onClick={openCassino} style={{ marginTop: '0.5rem', width: '18rem', background: 'black' }} variant='contained' color='secondary'>
           Cassino Online
-        </Button>
+        </Button>*/}
       </main>
     </div>
   )
