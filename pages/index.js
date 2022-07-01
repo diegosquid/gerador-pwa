@@ -165,7 +165,7 @@ export default function Home (props) {
           {loading && <CircularProgress color="inherit" />}
 
           {!loading && numbers.map(number => {
-            return <li>{number}</li>
+            return <li key={'number' + number}>{number}</li>
           })}
         </ul>
         <Button onClick={() => guess()} variant="contained" color="primary"  style={{marginTop: '5rem', width: '18rem'}}>
