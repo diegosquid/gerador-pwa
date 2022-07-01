@@ -32,30 +32,25 @@ export default function Home (props) {
     window.addEventListener('beforeinstallprompt', (e) => {
       e.preventDefault()
       setDeferredPrompt(e)
-      console.log("Got event");
-      console.log(deferredPrompt)
-      console.log(deferredPrompt)
     })
   }, [])
 
   const installModal = function () {
-    setShowAlert(true)
+    if (deferredPrompt !== null) {
+      setShowAlert(true)
+    }
   }
 
   const installButton = async () => {
-    console.log(deferredPrompt)
-    console.log(deferredPrompt)
-    console.log(deferredPrompt)
-    console.log(deferredPrompt)
-
     if (deferredPrompt !== null) {
       deferredPrompt.prompt();
       const { outcome } = await deferredPrompt.userChoice;
       if (outcome === 'accepted') {
-        deferredPrompt = null;
+        setDeferredPrompt(null)
       }
     }
   }
+
   const guess = function () {
     setLoading(true)
     setNumbers([])
