@@ -45,7 +45,7 @@ export default function Home (props) {
   const installButton = async () => {
     if (props.deferredPrompt !== null) {
       props.deferredPrompt.prompt()
-      const { outcome } = await deferredPrompt.userChoice
+      const { outcome } = await props.deferredPrompt.userChoice
       if (outcome === 'accepted') {
         window.gtag('event', 'app_install', 0)
         props.setDeferredPrompt(null)
