@@ -26,28 +26,29 @@ export default function Home (props) {
 
   const [open, setOpen] = React.useState(false)
   const [openSnack, setOpenSnack] = React.useState(false)
-  const [deferredPrompt, setDeferredPrompt] = React.useState(null)
 
   React.useEffect(() => {
+    installModal()
+
     window.addEventListener('beforeinstallprompt', (e) => {
       e.preventDefault()
-      setDeferredPrompt(e)
+      props.setDeferredPrompt(e)
     })
   }, [])
 
   const installModal = function () {
-    if (deferredPrompt !== null) {
+    if (props.deferredPrompt !== null) {
       setShowAlert(true)
     }
   }
 
   const installButton = async () => {
-    if (deferredPrompt !== null) {
-      deferredPrompt.prompt()
+    if (props.deferredPrompt !== null) {
+      props.deferredPrompt.prompt()
       const { outcome } = await deferredPrompt.userChoice
       if (outcome === 'accepted') {
         window.gtag('event', 'app_install', 0)
-        setDeferredPrompt(null)
+        props.setDeferredPrompt(null)
         setShowAlert(false)
       }
     }

@@ -36,11 +36,13 @@ function MyApp ({ Component, pageProps }) {
     }
   }, [page])
 
+  const [deferredPrompt, setDeferredPrompt] = React.useState(null)
+
   return (
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Component {...pageProps} />
+        <Component {...pageProps} deferredPrompt={deferredPrompt} setDeferredPrompt={setDeferredPrompt} />
         <BottomNav {...pageProps} handlePageChange={setPage} page={page} />
       </ThemeProvider>
     </>
