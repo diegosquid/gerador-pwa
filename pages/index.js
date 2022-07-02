@@ -33,6 +33,10 @@ export default function Home (props) {
     window.addEventListener('beforeinstallprompt', (e) => {
       e.preventDefault()
       props.setDeferredPrompt(e)
+
+      setTimeout(() => {
+        setShowAlert(true)
+      }, 4000)
     })
   }, [])
 
@@ -136,9 +140,9 @@ export default function Home (props) {
       <main className={styles.main}>
         {
           showAlert &&
-            <Alert icon={false} severity='success' style={{ position: 'absolute', top: 0, width: '100%', borderRadius: 0 }}>
+            <Alert icon={false} severity='success' style={{ position: 'absolute', top: 0, width: '100%', borderRadius: 0, display: 'flex', justifyContent: 'center' }}>
               <p style={{ fontWeight: 500, fontSize: 14, lineHeight: '130%' }}>Instale este aplicativo para acessar quando quiser, é grátis e não consome nada de espaço</p>
-              <Button style={{ minWidth: 200, backgroundColor: '#7c0044', color: 'white' }} onClick={installButton}>
+              <Button style={{ width: '100%', backgroundColor: 'orange', color: 'white' }} onClick={installButton}>
                 Instalar
               </Button>
             </Alert>
