@@ -28,7 +28,7 @@ function MyApp ({ Component, pageProps }) {
         router.push('/salvos')
         break
       case 2:
-        router.push('/casino')
+        router.push('/cassino')
         break
       case 3:
         router.push('/recomendado')
@@ -42,7 +42,7 @@ function MyApp ({ Component, pageProps }) {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Component {...pageProps} deferredPrompt={deferredPrompt} setDeferredPrompt={setDeferredPrompt} />
+        <Component {...pageProps} deferredPrompt={deferredPrompt} setDeferredPrompt={setDeferredPrompt} setPage={setPage}/>
         <BottomNav {...pageProps} handlePageChange={setPage} page={page} />
       </ThemeProvider>
     </>

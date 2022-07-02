@@ -94,7 +94,7 @@ export default function Home (props) {
   }
 
   const openCassino = () => {
-    props.openPage(2)
+    props.setPage(2)
   }
 
   const save = () => {
@@ -184,9 +184,9 @@ export default function Home (props) {
           Sistema Vip da Lotofácil
         </Button>
 
-        {/*<Button onClick={openCassino} style={{ marginTop: '0.5rem', width: '18rem', background: 'black' }} variant='contained' color='secondary'>
+        <Button onClick={openCassino} style={{ marginTop: '0.5rem', width: '18rem', background: 'black' }} variant='contained' color='secondary'>
           Cassino Online
-        </Button>*/}
+        </Button>*
       </main>
     </div>
   )
