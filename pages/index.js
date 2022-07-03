@@ -15,7 +15,9 @@ import DialogContent from '@material-ui/core/DialogContent'
 import MuiAlert from '@material-ui/lab/Alert'
 import Snackbar from '@material-ui/core/Snackbar'
 
-function Alert(props) {
+import getUtms from '../util/getUtms'
+
+function Alert (props) {
   return <MuiAlert elevation={6} variant='filled' {...props} />
 }
 
@@ -91,7 +93,7 @@ export default function Home (props) {
     } catch (e) {
       console.log(e)
     }
-    window.open('https://ev.braip.com/campanhas/cpa/camnx5zxy?utm_source=pwa')
+    window.open('https://ev.braip.com/campanhas/cpa/camnx5zxy?' + getUtms())
   }
 
   const openCassino = () => {

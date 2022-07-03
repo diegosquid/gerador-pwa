@@ -6,6 +6,8 @@ import theme from '../theme'
 import BottomNav from '../components/BottomNav'
 import { useRouter } from 'next/router'
 
+import saveUtms from '../util/saveUtms'
+
 function MyApp ({ Component, pageProps }) {
   const [page, setPage] = React.useState(0)
 
@@ -20,6 +22,8 @@ function MyApp ({ Component, pageProps }) {
   }, [])
 
   React.useEffect(() => {
+    saveUtms();
+
     switch (page) {
       case 0:
         router.push('/')
