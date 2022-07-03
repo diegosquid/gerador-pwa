@@ -54,6 +54,7 @@ export default function Home (props) {
         window.gtag('event', 'app_install')
         props.setDeferredPrompt(null)
         setShowAlert(false)
+        window.location.hash = '#installed'
       }
     }
   }
