@@ -16,6 +16,7 @@ import MuiAlert from '@material-ui/lab/Alert'
 import Snackbar from '@material-ui/core/Snackbar'
 
 import getUtms from '../util/getUtms'
+import track from '../util/track'
 
 function Alert (props) {
   return <MuiAlert elevation={6} variant='filled' {...props} />
@@ -57,6 +58,7 @@ export default function Home (props) {
         props.setDeferredPrompt(null)
         setShowAlert(false)
         window.location.hash = '#installed'
+        track()
       }
     }
   }
