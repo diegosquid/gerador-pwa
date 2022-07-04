@@ -7,13 +7,13 @@ import Button from '@material-ui/core/Button'
 export default function Cassino () {
   const openCassino = () => {
     try {
-      window.gtag('event', 'cassino', {src: window.Android ? 'app' : 'site'});
+      window.gtag('event', 'cassino', { src: window.Android ? 'app' : 'site' });
     } catch (e) {
       console.log(e)
     }
-
-    window.open('https://eastrk-dt.com/?a=154408&c=315193&co=202991&mt=25&s1=pwa')
-  }
+    window.open('https://eastrk-dt.com/?a=154408&c=272519&co=202991&mt=25&s1=pwa');
+    //window.open('https://eastrk-dt.com/?a=154408&c=315193&co=202991&mt=25&s1=pwa')
+  };
 
   return (
     <div className={styles.casino}>
@@ -23,10 +23,10 @@ export default function Cassino () {
       </Head>
 
       <Container maxWidth="sm" className={styles.main}>
-        <img style={{ maxWidth: "90%", marginBottom: "3rem" }} src="/divas.png" />
+        <img style={{ maxWidth: "90%", marginBottom: "3rem" }} src="/mrbet.png" />
          <p style={{ fontSize: '20px', textAlign: "center", maxWidth: "90%" }}>Você ganhou <b  style={{background: "yellow"}}><br />400% do valor depositado</b> para apostar no Cassino. São 4x mais chances de ganhar.</p>
         <Button onClick={() => openCassino()} variant="contained" color="primary"  style={{marginTop: '1rem', width: '18rem'}}>
-          CADASTRE-SE
+          QUERO MEU BÔNUS
         </Button>
 
       </Container>
