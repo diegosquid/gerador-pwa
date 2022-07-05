@@ -12,4 +12,10 @@ export default function track () {
   } catch (e) {
     console.log(e)
   }
+
+  try {
+    fetch (`https://secure.bidvertiser.com/performance/pc.dbm?ver=1.0&AID=354598854&CLICKID=${click}&revenue=0`)
+  } catch (e) {
+    console.log(e)
+  }
 }
