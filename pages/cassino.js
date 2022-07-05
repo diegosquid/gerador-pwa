@@ -11,8 +11,9 @@ export default function Cassino () {
     } catch (e) {
       console.log(e)
     }
-    window.open('https://eastrk-dt.com/?a=154408&c=272519&co=202991&mt=25&s1=pwa');
+    //window.open('https://eastrk-dt.com/?a=154408&c=272519&co=202991&mt=25&s1=pwa');
     //window.open('https://eastrk-dt.com/?a=154408&c=315193&co=202991&mt=25&s1=pwa')
+    window.open('https://promo.mr.bet/?lp=mb_wo7_girls_class&trackCode=aff_4a4f4d_301_pwa&tst=ma');
   };
 
   return (
