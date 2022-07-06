@@ -72,21 +72,6 @@ export default class MyDocument extends Document {
             }}
           />
 
-          <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.OneSignal = window.OneSignal || [];
-                OneSignal.push(function() {
-                  OneSignal.init({
-                    appId: "9a5f70fe-b204-4c46-a9ac-f34391672fd7",
-                  });
-                });
-                `
-            }}
-          />
-
         </Head>
         <body>
           <Main />

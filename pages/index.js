@@ -190,8 +190,8 @@ export default function Home (props) {
         </Button>
 
         <Button onClick={openCassino} style={{ marginTop: '0.5rem', width: '18rem', background: 'black' }} variant='contained' color='secondary'>
-          Apostas Esportivas
-        </Button>*
+          Cassino Online
+        </Button>
       </main>
     </div>
   )
