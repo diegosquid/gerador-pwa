@@ -18,13 +18,13 @@ export default function Cassino () {
   return (
     <div className={styles.casino}>
       <Head>
-        <title>Apostas Esportivas</title>
+        <title>Cassino</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Container maxWidth="sm" className={styles.main}>
         <img style={{ maxWidth: "90%", marginBottom: "3rem" }} src="/betobet-logo.png" />
-         <p style={{ fontSize: '20px', textAlign: "center", maxWidth: "90%" }}>Você ganhou <b  style={{background: "yellow"}}><br />100% do valor depositado</b> para apostar no seu Time Favorito e no Cassino. São duas vezes mais chances de ganhar.</p>
+         <p style={{ fontSize: '20px', textAlign: "center", maxWidth: "90%" }}>Você ganhou <b  style={{background: "yellow"}}><br />2x do valor depositado</b> para apostar no no Cassino. São duas vezes mais chances de ganhar.</p>
         <Button onClick={() => openCassino()} variant="contained" color="primary"  style={{marginTop: '1rem', width: '18rem'}}>
           REGISTRE-SE AGORA
         </Button>
