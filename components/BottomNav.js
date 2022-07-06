@@ -29,7 +29,7 @@ export default function BottomNav ({ page, handlePageChange }) {
     >
       <BottomNavigationAction label='Gerador' icon={<AccountCircleIcon />} />
       <BottomNavigationAction label='Jogos Salvos' icon={<SaveIcon />} />
-      <BottomNavigationAction label='Cassino' icon={<Casino />} />
+      <BottomNavigationAction label='Apostas Esportivas' icon={<Casino />} />
     </BottomNavigation>
   )
 }
