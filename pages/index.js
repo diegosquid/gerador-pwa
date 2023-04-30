@@ -192,6 +192,21 @@ export default function Home (props) {
         <Button onClick={openCassino} style={{ marginTop: '0.5rem', width: '18rem', background: 'black' }} variant='contained' color='secondary'>
           Cassino Online
         </Button>
+
+        <div className={styles.seo}>
+          <p>Já sonhou em ganhar na Lotofácil e mudar de vida? Muitos brasileiros sonham com a possibilidade de acertar todas as 15 dezenas e levar o prêmio máximo para casa. Afinal, quem não gostaria de ter a sorte de ganhar uma bolada? Para facilitar sua vida e aumentar suas chances de sucesso, apresentamos o gerador da Lotofácil, uma ferramenta que pode ser sua aliada na hora de montar suas apostas.</p>
+          <h2>O que é o gerador da Lotofácil?</h2>
+          <p>O gerador da Lotofácil é uma ferramenta online criada para ajudar os apostadores a elaborarem seus jogos de forma mais eficiente e estratégica. Através de algoritmos e análises estatísticas, o gerador oferece combinações de números com maior probabilidade de acerto, levando em consideração diversos fatores e dados históricos dos sorteios anteriores.</p>
+          <h2>Como funciona o gerador da Lotofácil?</h2>
+          <p>Para utilizar o gerador da Lotofácil, basta acessar o site ou aplicativo, inserir a palavra-chave "gerador da Lotofácil" e seguir as instruções na tela. A ferramenta permite que você escolha a quantidade de jogos que deseja gerar, além de oferecer diferentes tipos de estratégias e análises para aumentar suas chances de sucesso.</p>
+          <h2>Vantagens do aplicativo da Lotofácil:</h2>
+          <ul>
+            <li>Economia de tempo: Com o gerador, você não precisa mais perder horas analisando e montando seus jogos manualmente.</li>
+            <li>Maior probabilidade de acerto: Utilizando estratégias baseadas em estatísticas e análises, o gerador pode aumentar suas chances de ganhar.</li>
+            <li>Facilidade de uso: A ferramenta é intuitiva e fácil de usar, mesmo para quem não possui conhecimentos avançados em matemática ou estatística.</li>
+          </ul>
+          <p>Embora não seja possível garantir a vitória no jogo, o gerador da Lotofácil pode ser uma excelente ferramenta para aumentar suas chances e tornar o processo de apostar mais divertido e emocionante. Com ele, você poderá elaborar jogos mais estratégicos e, quem sabe, ficar mais próximo do tão sonhado prêmio. Boa sorte e boas apostas!</p>
+        </div>
       </main>
     </div>
   )

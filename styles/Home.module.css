@@ -173,3 +173,10 @@
     flex-direction: column;
   }
 }
+
+.seo {
+  margin-top: 2rem;
+  width: 18rem;
+  padding-bottom: 5rem;
+  color: white;
+}
