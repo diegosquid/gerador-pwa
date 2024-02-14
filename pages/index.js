@@ -198,7 +198,7 @@ export default function Home (props) {
           <h2>O que é o gerador da Lotofácil?</h2>
           <p>O gerador da Lotofácil é uma ferramenta online criada para ajudar os apostadores a elaborarem seus jogos de forma mais eficiente e estratégica. Através de algoritmos e análises estatísticas, o gerador oferece combinações de números com maior probabilidade de acerto, levando em consideração diversos fatores e dados históricos dos sorteios anteriores.</p>
           <h2>Como funciona o gerador da Lotofácil?</h2>
-          <p>Para utilizar o gerador da Lotofácil, basta acessar o site ou aplicativo, inserir a palavra-chave "gerador da Lotofácil" e seguir as instruções na tela. A ferramenta permite que você escolha a quantidade de jogos que deseja gerar, além de oferecer diferentes tipos de estratégias e análises para aumentar suas chances de sucesso.</p>
+          <p>Para utilizar o gerador da Lotofácil, basta acessar o site ou aplicativo, inserir a palavra-chave &quot;gerador da Lotofácil&quot; e seguir as instruções na tela. A ferramenta permite que você escolha a quantidade de jogos que deseja gerar, além de oferecer diferentes tipos de estratégias e análises para aumentar suas chances de sucesso.</p>
           <h2>Vantagens do aplicativo da Lotofácil:</h2>
           <ul>
             <li>Economia de tempo: Com o gerador, você não precisa mais perder horas analisando e montando seus jogos manualmente.</li>
