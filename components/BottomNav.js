@@ -3,6 +3,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle'
 import SaveIcon from '@material-ui/icons/Save'
 import Casino from '@material-ui/icons/Casino';
+import CalendarToday from '@material-ui/icons/CalendarToday';
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles({
@@ -30,7 +31,7 @@ export default function BottomNav ({ page, handlePageChange }) {
       <BottomNavigationAction label='Gerador' icon={<AccountCircleIcon />} />
       <BottomNavigationAction label='Jogos Salvos' icon={<SaveIcon />} />
       <BottomNavigationAction label='Cassino' icon={<Casino />} />
-      {/* <BottomNavigationAction label='Resultado' icon={<Casino />} /> */}
+      <BottomNavigationAction label='Resultado' icon={<CalendarToday />} />
     </BottomNavigation>
   )
 }
