@@ -8,26 +8,13 @@ import { useRouter } from 'next/router'
 
 import saveUtms from '../util/saveUtms'
 
-// Get current pathname
-export const getServerSideProps = async (context) => {
-  console.log("OI")
-  console.log(context.req.url);
-  // Get current url
-
-  console.log(context.req.url);
-  return { props: { 
-    url: context.resolvedUrl,
-    oi: "OI"
-  }}
-}
-
 function MyApp ({Component, pageProps, router: serverRouter}) {
   let getPath = (path) => {
     switch(path) {
       case '/': return 0
       case '/salvos': return 1
       case '/cassino': return 2
-      case '/recomendado': return 3
+      case 'resultado-da-lotofacil': return 3
       default: return 0
     }
   }
@@ -50,7 +37,7 @@ function MyApp ({Component, pageProps, router: serverRouter}) {
       case '/': return 0
       case '/salvos': return 1
       case '/cassino': return 2
-      case '/recomendado': return 3
+      case '/ultimo-resultado': return 3
       default: return 0
     }
   }
@@ -70,7 +57,7 @@ function MyApp ({Component, pageProps, router: serverRouter}) {
         router.push('/cassino')
         break
       case 3:
-        router.push('/recomendado')
+        router.push('/ultimo-resultado')
         break
     }
   }, [page])

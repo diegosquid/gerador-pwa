@@ -12,7 +12,7 @@ export default function Cassino () {
       console.log(e)
     }
 
-    window.open('https://go.betobet.online/visit/?bta=36421&nci=5656&afp=CLICKID&utm_campaign=SOURCE&afp1=PWA');
+    window.open('http://trck.gdmsecure-ig.com/?a=154408&c=349419&co=202991&mt=5&s1=gerador');
   };
 
   return (
