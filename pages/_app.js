@@ -8,8 +8,31 @@ import { useRouter } from 'next/router'
 
 import saveUtms from '../util/saveUtms'
 
-function MyApp ({ Component, pageProps }) {
-  const [page, setPage] = React.useState(0)
+// Get current pathname
+export const getServerSideProps = async (context) => {
+  console.log("OI")
+  console.log(context.req.url);
+  // Get current url
+
+  console.log(context.req.url);
+  return { props: { 
+    url: context.resolvedUrl,
+    oi: "OI"
+  }}
+}
+
+function MyApp ({Component, pageProps, router: serverRouter}) {
+  let getPath = (path) => {
+    switch(path) {
+      case '/': return 0
+      case '/salvos': return 1
+      case '/cassino': return 2
+      case '/recomendado': return 3
+      default: return 0
+    }
+  }
+
+  const [page, setPage] = React.useState(getPath(serverRouter.pathname))
 
   const router = useRouter()
 
@@ -20,6 +43,18 @@ function MyApp ({ Component, pageProps }) {
       jssStyles.parentElement.removeChild(jssStyles)
     }
   }, [])
+
+
+  getPath = (path) => {
+    switch(path) {
+      case '/': return 0
+      case '/salvos': return 1
+      case '/cassino': return 2
+      case '/recomendado': return 3
+      default: return 0
+    }
+  }
+    
 
   React.useEffect(() => {
     saveUtms();

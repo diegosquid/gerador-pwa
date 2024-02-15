@@ -23,8 +23,8 @@ export default function Cassino () {
       </Head>
 
       <Container maxWidth="sm" className={styles.main}>
-        <img style={{ maxWidth: "90%", marginBottom: "3rem" }} src="/betobet-logo.png" />
-         <p style={{ fontSize: '20px', textAlign: "center", maxWidth: "90%" }}>Você ganhou <b  style={{background: "yellow"}}><br />2x do valor depositado</b> para apostar no no Cassino. São duas vezes mais chances de ganhar.</p>
+        <img style={{ maxWidth: "90%", marginBottom: "3rem" }} src="https://fnembrasil.org/blog/wp-content/uploads/fezbet-logo.webp" />
+         <p style={{ fontSize: '20px', textAlign: "center", maxWidth: "90%" }}>Você ganhou <b  style={{background: "yellow"}}><br />R$2000,00 + 200 rodadas grátis </b> <br /> para apostar no no Cassino.</p>
         <Button onClick={() => openCassino()} variant="contained" color="primary"  style={{marginTop: '1rem', width: '18rem'}}>
           REGISTRE-SE AGORA
         </Button>
