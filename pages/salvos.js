@@ -38,9 +38,9 @@ export default function Salvos() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Jogos Salvos</title>
+        <title>Lotofácil: Acesso aos Jogos Salvos e Dicas</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name='description' content='Jogos Salvos da Lotofácil' />
+        <meta name='description' content='Acesse facilmente seus jogos salvos da Lotofácil e obtenha dicas valiosas para otimizar suas apostas. Tudo o que você precisa em um só lugar!' />
       </Head>
 
       <Container maxWidth="sm" className={styles.main}>

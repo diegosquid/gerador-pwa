@@ -33,8 +33,8 @@ export default function UltimosResultados (props) {
   return (
     <div>
       <Head>
-        <title>Ultimos Resultados</title>
-        <meta name='description' content='Resultado da Lotofácil' />
+        <title>Últimos Resultados da Lotofácil: Confira!</title>
+        <meta name='description' content='Fique por dentro dos últimos resultados da Lotofácil. Veja agora se você foi um dos felizardos e confira dicas para suas próximas apostas!' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       

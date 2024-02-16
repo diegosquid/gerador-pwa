@@ -139,8 +139,8 @@ export default function Home (props) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>GERADOR DA LOTOFÁCIL</title>
-        <meta name='description' content='Gerador de Jogos da Lotofácil' />
+        <title>Gerador da Lotofácil: Aumente suas Chances</title>
+        <meta name='description' content='Descubra como o Gerador da Lotofácil pode aumentar suas chances de ganhar. Ferramentas inteligentes para melhores resultados. Confira agora!' />
       </Head>
 
       <main className={styles.main}>
