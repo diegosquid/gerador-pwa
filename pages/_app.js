@@ -14,7 +14,7 @@ function MyApp ({Component, pageProps, router: serverRouter}) {
       case '/': return 0
       case '/salvos': return 1
       case '/cassino': return 2
-      case '/resultado': return 3
+      case '/resultado-da-lotofacil': return 3
       default: return 0
     }
   }
@@ -37,7 +37,7 @@ function MyApp ({Component, pageProps, router: serverRouter}) {
       case '/': return 0
       case '/salvos': return 1
       case '/cassino': return 2
-      case '/resultado': return 3
+      case '/resultado-da-lotofacil': return 3
       default: return 0
     }
   }
@@ -57,7 +57,7 @@ function MyApp ({Component, pageProps, router: serverRouter}) {
         router.push('/cassino')
         break
       case 3:
-        router.push('/resultado')
+        router.push('/resultado-da-lotofacil')
         break
     }
   }, [page])
