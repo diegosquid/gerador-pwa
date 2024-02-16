@@ -44,7 +44,7 @@ export default function Salvos() {
       </Head>
 
       <Container maxWidth="sm" className={styles.main}>
-        <h2>Jogos Salvos</h2>
+        <h1 style={{color: 'white', fontSize: 22, textTransform: "uppercase"}}>Jogos Salvos da Lotofácil</h1>
 
         { games.length == 0 && 
           <p style={{color: "white"}}>Nenhum jogo salvo :( </p>

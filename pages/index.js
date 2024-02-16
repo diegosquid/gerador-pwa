@@ -154,7 +154,7 @@ export default function Home (props) {
             </Alert>
         }
 
-        <h2>GERADOR DA LOTOFÁCIL</h2>
+        <h1 style={{color: 'white', fontSize: 22}}>GERADOR DA LOTOFÁCIL</h1>
 
         <SaveDialog open={open} handleClose={handleClose} handleSave={handleSave}/>
 

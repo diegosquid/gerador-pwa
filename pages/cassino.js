@@ -24,6 +24,8 @@ export default function Cassino () {
       </Head>
 
       <Container maxWidth="sm" className={styles.main}>
+       <h1 style={{color: 'black', fontSize: 22, textTransform: "uppercase"}}>Oferta de Cassino</h1>
+
         <img style={{ maxWidth: "90%", marginBottom: "3rem" }} src="https://fnembrasil.org/blog/wp-content/uploads/fezbet-logo.webp" />
          <p style={{ fontSize: '20px', textAlign: "center", maxWidth: "90%" }}>Você ganhou <b  style={{background: "yellow"}}><br />R$2000,00 + 200 rodadas grátis </b> <br /> para apostar no no Cassino.</p>
         <Button onClick={() => openCassino()} variant="contained" color="primary"  style={{marginTop: '1rem', width: '18rem'}}>
