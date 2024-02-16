@@ -34,6 +34,7 @@ export default function UltimosResultados (props) {
     <div>
       <Head>
         <title>Ultimos Resultados</title>
+        <meta name='description' content='Resultado da Lotofácil' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       

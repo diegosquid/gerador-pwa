@@ -140,6 +140,7 @@ export default function Home (props) {
     <div className={styles.container}>
       <Head>
         <title>GERADOR DA LOTOFÁCIL</title>
+        <meta name='description' content='Gerador de Jogos da Lotofácil' />
       </Head>
 
       <main className={styles.main}>

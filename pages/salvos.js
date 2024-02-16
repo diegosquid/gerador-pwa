@@ -40,6 +40,7 @@ export default function Salvos() {
       <Head>
         <title>Jogos Salvos</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name='description' content='Jogos Salvos da Lotofácil' />
       </Head>
 
       <Container maxWidth="sm" className={styles.main}>

@@ -20,6 +20,7 @@ export default function Cassino () {
       <Head>
         <title>Cassino</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name='description' content='Oferta de Cassino' />
       </Head>
 
       <Container maxWidth="sm" className={styles.main}>
