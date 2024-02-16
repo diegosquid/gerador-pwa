@@ -8,6 +8,7 @@ import ListItemText from "@material-ui/core/ListItemText"
 import ListItemIcon from "@material-ui/core/ListItemIcon"
 
 import DeleteIcon from '@material-ui/icons/Delete';
+import { Typography } from "@material-ui/core"
 export default function Salvos() {
 
   const [games,setGames] = React.useState([])
@@ -76,6 +77,19 @@ export default function Salvos() {
           }
         </List>
         }
+      </Container>
+
+      <Container maxWidth="sm" className={styles.main}>
+        <Typography variant="h4" component="h2" style={{color: 'white', fontSize: 22, textTransform: "uppercase"}}>Acompanhe Seus Jogos com Facilidade
+        </Typography>
+        <Typography variant="p" component="p" style={{color: "white", marginTop: "1rem"}}>
+          Manter um registro dos seus jogos salvos na Lotofácil é essencial para uma estratégia de jogo eficaz e para acompanhar de perto os resultados da Lotofácil. Em nossa seção de Jogos Salvos, você pode facilmente consultar as apostas que realizou, verificar quais números foram sorteados e comparar com os resultados da Lotofácil. Essa funcionalidade foi pensada para jogadores que buscam maximizar suas chances de ganhar, oferecendo uma maneira organizada de gerenciar suas apostas e acompanhar os resultados de forma atualizada.
+        </Typography>
+        <Typography variant="h4" component="h2" style={{color: 'white', fontSize: 22, textTransform: "uppercase",  marginTop: "1rem"}}>Siga os Resultados da Lotofácil e Aumente suas Chances
+        </Typography>
+        <Typography variant="p" component="p" style={{color: "white", marginTop: "1rem"}}>
+        Encorajamos nossos usuários a repetir os jogos que acreditam ter o maior potencial, baseando-se na análise dos resultados da Lotofácil. Essa prática, quando feita de maneira informada e estratégica, pode ser a chave para se aproximar do grande prêmio. Ao revisitar e ajustar seus jogos salvos com base nos resultados atualizados, você desenvolve uma compreensão mais profunda sobre quais combinações de números têm maiores chances de serem sorteadas. Este método não apenas otimiza suas apostas, mas também torna o processo de participação mais emocionante e fundamentado em uma estratégia sólida.
+        </Typography>
       </Container>
 
     </div>
