@@ -18,6 +18,9 @@ import Snackbar from '@material-ui/core/Snackbar'
 import getUtms from '../util/getUtms'
 import track from '../util/track'
 
+import { FacebookShareButton, FacebookIcon } from 'react-share';
+
+
 function Alert (props) {
   return <MuiAlert elevation={6} variant='filled' {...props} />
 }
@@ -187,6 +190,16 @@ export default function Home (props) {
         <Button onClick={openCassino} style={{ marginTop: '0.5rem', width: '18rem', background: 'black' }} variant='contained' color='secondary'>
           Cassino Online
         </Button>
+
+        <FacebookShareButton
+          url={'https://lotofacil.me'}     //eg. https://www.example.com
+          quotes={"Estou usando este gerador gratuito da Lotofácil"}  //"Your Quotes"
+          hashtag={'#lotofacil'} // #hashTag
+          style={{display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'white', background: 'rgb(9, 101, 254)', width: '18rem', marginTop: '0.5rem'}}
+          >
+        <FacebookIcon />
+        COMPARTILHE ESTE APLICATIVO
+      </FacebookShareButton> 
 
         <div className={styles.seo}>
           <p>Já sonhou em ganhar na Lotofácil e mudar de vida? Muitos brasileiros sonham com a possibilidade de acertar todas as 15 dezenas e levar o prêmio máximo para casa. Afinal, quem não gostaria de ter a sorte de ganhar uma bolada? Para facilitar sua vida e aumentar suas chances de sucesso, apresentamos o gerador da Lotofácil, uma ferramenta que pode ser sua aliada na hora de montar suas apostas.</p>

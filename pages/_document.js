@@ -45,7 +45,7 @@ export default class MyDocument extends Document {
           <meta property='og:description' content='Gere seus jogos da Lotofácil' />
           <meta property='og:site_name' content='Aplicativo da Lotofacil' />
           <meta property='og:url' content='https://lotofacil.me' />
-          <meta property='og:image' content='https://lotofacil.me/icons/apple-touch-icon.png' />
+          <meta property='og:image' content='/lotofacil.png' />
           <script async src='https://www.googletagmanager.com/gtag/js?id=G-HQHBMSYDXF' />
 
           <script
