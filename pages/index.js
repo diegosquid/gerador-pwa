@@ -89,6 +89,7 @@ export default function Home (props) {
   const openUrl = () => {
     try {
       window.gtag('event', 'click', { src: window.Android ? 'app' : 'site' })
+      _mgq?.push(["MgSensorInvoke", "desejo"])
     } catch (e) {
       console.log(e)
     }
