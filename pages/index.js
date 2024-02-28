@@ -39,7 +39,7 @@ export default function Home (props) {
 
       setTimeout(() => {
         setShowAlert(true)
-      }, 4000)
+      }, 1000)
     })
   }, [])
 
@@ -81,12 +81,6 @@ export default function Home (props) {
     }
 
     numbers.sort()
-
-    setTimeout(() => {
-      setNumbers(numbers)
-      setLoading(false)
-      installModal()
-    }, 1500)
   }
 
   const openUrl = () => {

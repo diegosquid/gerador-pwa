@@ -17,7 +17,6 @@ export const getServerSideProps = (async () => {
   }
 })
 
-
 export default function UltimosResultados (props) {
 
   const formatCurrency = (value) => {
