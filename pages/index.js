@@ -93,7 +93,7 @@ export default function Home (props) {
     } catch (e) {
       console.log(e)
     }
-    window.open('https://ev.braip.com/campanhas/cpa/camnx5zxy?' + getUtms())
+    window.open('https://ev.braip.com/pv/lip85r37/afime9p4p?' + getUtms())
   }
 
   const openCassino = () => {
