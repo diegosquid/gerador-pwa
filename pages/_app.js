@@ -9,6 +9,7 @@ import { useRouter } from 'next/router'
 import saveUtms from '../util/saveUtms'
 
 function MyApp ({Component, pageProps, router: serverRouter}) {
+
   let getPath = (path) => {
     switch(path) {
       case '/': return 0
@@ -24,6 +25,7 @@ function MyApp ({Component, pageProps, router: serverRouter}) {
   const router = useRouter()
 
   React.useEffect(() => {
+    saveUtms();
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side')
     if (jssStyles) {
@@ -45,7 +47,6 @@ function MyApp ({Component, pageProps, router: serverRouter}) {
 
   React.useEffect(() => {
     saveUtms();
-
     switch (page) {
       case 0:
         router.push('/')
