@@ -18,7 +18,7 @@ import Snackbar from '@material-ui/core/Snackbar'
 import getUtms from '../util/getUtms'
 import track from '../util/track'
 
-import { FacebookShareButton, FacebookIcon } from 'react-share';
+import { FacebookShareButton, FacebookIcon, FacebookShareCount } from 'react-share';
 
 
 function Alert (props) {
@@ -201,9 +201,12 @@ export default function Home (props) {
         <FacebookIcon />
         COMPARTILHE ESTE APLICATIVO
       </FacebookShareButton> 
+      <FacebookShareCount url={'https://lotofacil.me'}>
+        {(shareCount) => <span className="myShareCountWrapper">{shareCount}</span>}
+      </FacebookShareCount>
 
         <div className={styles.seo}>
-          <p>Já sonhou em ganhar na Lotofácil e mudar de vida? Muitos brasileiros sonham com a possibilidade de acertar todas as 15 dezenas e levar o prêmio máximo para casa. Afinal, quem não gostaria de ter a sorte de ganhar uma bolada? Para facilitar sua vida e aumentar suas chances de sucesso, apresentamos o gerador da Lotofácil, uma ferramenta que pode ser sua aliada na hora de montar suas apostas.</p>
+          <p>Salve o site <b>https://lotofacil.me</b> para acessar sempre que precisar.</p>
           <h2>O que é o gerador da Lotofácil?</h2>
           <p>O gerador da Lotofácil é uma ferramenta online criada para ajudar os apostadores a elaborarem seus jogos de forma mais eficiente e estratégica. Através de algoritmos e análises estatísticas, o gerador oferece combinações de números com maior probabilidade de acerto, levando em consideração diversos fatores e dados históricos dos sorteios anteriores.</p>
           <h2>Como funciona o gerador da Lotofácil?</h2>
